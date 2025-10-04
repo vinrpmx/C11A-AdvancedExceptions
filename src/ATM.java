@@ -1,5 +1,5 @@
 public class ATM {
-	private BankAccount amount;
+	private static BankAccount amount;
 
 	public ATM(BankAccount amount) {
 		super();
@@ -25,6 +25,12 @@ public class ATM {
 			System.out.println(e);
 			System.out.println(e.getMessage());
 		}
+	}
+	
+	public static void main(String args []) {
+		ATM officalAccount = new ATM(amount);
+		
+		officalAccount.handleTransactions();
 	}
 	
 }

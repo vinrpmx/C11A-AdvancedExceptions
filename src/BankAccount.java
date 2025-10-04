@@ -12,7 +12,7 @@ public class BankAccount {
 	//withdraws
 	public void withdraw(double amountWithdraw) throws NegativeBalanceException {
 		if (amountWithdraw > balance) {
-			throw new NegativeBalanceException();
+			throws new NegativeBalanceException();
 		}
 		else {
 			balance -= amountWithdraw;
@@ -22,7 +22,7 @@ public class BankAccount {
 	//quick withdraws
 	public void quickWithdraw(double amountWithdraw) throws NegativeBalanceException {
 		if (amountWithdraw > balance) {
-			throws NegativeBalanceException;
+			throws new NegativeBalanceException();
 		}
 		else {
 			balance = balance - amountWithdraw;
