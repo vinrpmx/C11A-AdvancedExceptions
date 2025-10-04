@@ -1,16 +1,15 @@
 public class ATM {
-	private static BankAccount amount;
+	private static BankAccount account;
 
-	public ATM(BankAccount amount) {
+	public ATM() {
 		super();
-		this.amount = amount;
+		account = new BankAccount(500);
 	}
 	
 	public void handleTransactions() {
-		BankAccount account = new BankAccount(500);
 		try {
-			//tries to withdraw $600
-			account.withdraw(600);
+			//tries to withdraw $600 through withdraw
+			account.withdraw(400);
 		} catch (NegativeBalanceException e) {
 			// throws NegativeException error
 			System.out.println(e);
@@ -18,7 +17,7 @@ public class ATM {
 		}
 		
 		try {
-			//tries to withdraw $600
+			//tries to withdraw $600 through quickWithdraw
 			account.quickWithdraw(600);
 		} catch (NegativeBalanceException e) {
 			// throws NegativeException error
@@ -28,8 +27,7 @@ public class ATM {
 	}
 	
 	public static void main(String args []) {
-		ATM officalAccount = new ATM(amount);
-		
+		ATM officalAccount = new ATM();
 		officalAccount.handleTransactions();
 	}
 	

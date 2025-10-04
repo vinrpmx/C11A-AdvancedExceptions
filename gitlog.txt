@@ -1,3 +1,9 @@
+commit c86bfb1cb4e31efb52ef56746474ccd59b806947
+Author: Vincent Nguyen <vnguyen2@mines.edu>
+Date:   Sat Oct 4 16:23:59 2025 -0600
+
+    Added try-catch methods for NegativeBalanceExceptions.
+
 commit 75d851de507f68723c2c5b16e14ab278073d2780
 Author: Vincent Nguyen <vnguyen2@mines.edu>
 Date:   Sat Oct 4 15:58:53 2025 -0600

@@ -1,24 +1,21 @@
-import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class NegativeBalanceException extends Exception{
 	private double negativeBalance;
 
-	public NegativeBalanceException(String message) {
+	public NegativeBalanceException() {
 		super("Error: negative balance");
 	}
 
-	public NegativeBalanceException(double negativeBalance) {
-		super("Amount exceeds balance by " + negativeBalance);
+	public NegativeBalanceException(double amountWithdraw) {
+		super("Amount exceeds balance by " + amountWithdraw);
+		negativeBalance = amountWithdraw;
 		try {
-			FileWriter logfile = new FileWriter("logfile.txt", true);
-			PrintWriter out = new PrintWriter(logfile);
-			this.negativeBalance = negativeBalance;
+			PrintWriter out = new PrintWriter("logfile.txt");
 			out.println("Amount exceeds balance by " + negativeBalance);
 			out.close();
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) { //Used IOException as it is the parent of FileNotFoundException
 			System.out.println("Invalid File");
 		}
 	}
