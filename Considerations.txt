@@ -1,0 +1,7 @@
+What are 3 good practices related to exception handling?
+
+The three good practices in regards to exception handling are:
+1. Declaring specific checked exceptions that the method can throw (i.e. don't throw the general "Exceptions" exception).
+2. Throwing relevant exceptions from a method to keep code clean and understandable (i.e. NullPointerException dosen't do anything, but NoSuchFileFoundException is relevant to opening files).
+3. Always correctly wrap the exceptions in custom exceptions so that the stack trace is not lost. 
+	Ex: "throw new MyServiceException("Some information: " + e.getMessage());" is wrong, and just "'Some Information: ' + e" should be printed instead. 
