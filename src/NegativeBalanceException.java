@@ -15,7 +15,7 @@ public class NegativeBalanceException extends Exception{
 			PrintWriter out = new PrintWriter("logfile.txt");
 			out.println("Amount exceeds balance by " + negativeBalance);
 			out.close();
-		} catch (FileNotFoundException e) { //Used IOException as it is the parent of FileNotFoundException
+		} catch (FileNotFoundException e) { 
 			System.out.println("Invalid File");
 		}
 	}

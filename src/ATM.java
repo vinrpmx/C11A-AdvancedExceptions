@@ -9,7 +9,7 @@ public class ATM {
 	public void handleTransactions() {
 		try {
 			//tries to withdraw $600 through withdraw
-			account.withdraw(400);
+			account.withdraw(600);
 		} catch (NegativeBalanceException e) {
 			// throws NegativeException error
 			System.out.println(e);
