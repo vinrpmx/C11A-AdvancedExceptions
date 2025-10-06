@@ -1,3 +1,9 @@
+commit 4d96453aaf218c105ae24c78256600431c47bfa0
+Author: Vincent Nguyen <vnguyen2@mines.edu>
+Date:   Sat Oct 4 18:25:19 2025 -0600
+
+    Tested git to add the Considerations and updated logfile.txt.
+
 commit df33ca333b8d7f3e2062177e6a9df058d3f2318f
 Author: Vincent Nguyen <vnguyen2@mines.edu>
 Date:   Sat Oct 4 18:22:58 2025 -0600

@@ -10,7 +10,7 @@ public class BankAccount extends NegativeBalanceException {
 	public void withdraw(double amountWithdraw) throws NegativeBalanceException {
 		if (amountWithdraw > balance) {
 			//
-			throw new NegativeBalanceException(amountWithdraw);
+			throw new NegativeBalanceException(balance - amountWithdraw);
 		}
 		else {
 			balance -= amountWithdraw;
