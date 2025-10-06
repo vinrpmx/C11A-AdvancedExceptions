@@ -1,3 +1,12 @@
+I, Vincent Nguyen, certify that I participated equitably in the creation of assignment C11A, dated 2025.
+I, Austin Truhn, certify that I participated equitably in the creation of this assignment C11A, dated 2025.
+
+commit 77da6450bed10a8ba803cc4e4631c94203f2ae64
+Author: Vincent Nguyen <vnguyen2@mines.edu>
+Date:   Sun Oct 5 18:17:00 2025 -0600
+
+    Adjusted the first try-catch to display negative numbers.
+
 commit 4d96453aaf218c105ae24c78256600431c47bfa0
 Author: Vincent Nguyen <vnguyen2@mines.edu>
 Date:   Sat Oct 4 18:25:19 2025 -0600
